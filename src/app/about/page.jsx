@@ -36,61 +36,66 @@ export default function HomePage() {
       <div className="flex" style={{ justifyContent: "center", marginTop: "2cm", marginBottom: "2cm" }}>
 
         {/* Lado esquerdo */}
-        <div style={{ marginLeft: "4m" }}>
+        <div>
 
           <h1 className="font-bold text-4xl mb-4" style={{ marginTop: "1cm" }}>
-            I am Jane. I live in <br/>New York City, where <br/>I develop the future.
+            I am Luiz and Life is <br/>a gift given by God :) <br/>
           </h1>
 
           <p className="text-sm mb-4">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et <br/>
-            massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit <br/>
-            Ut et massa mi Lorem ipsum dolor sit amet consectetur <br/>
-            adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet <br />
-            consectetur adipiscing elit Ut et massa mi..<br/>
+          Hello! I'm Luiz Machado, a multifaceted professional with a love for data,<br/>
+          adventure, and community. Beyond my professional endeavors, I'm passionate<br/>
+          about Brazilian ballroom dancing, longboarding, soaking up the sun at the<br/>
+          beach, and exploring nature through hikes and camping trips.<br/>
           </p>
+
+
+          <h1 className="font-bold mb-4" style={{ marginTop: "1cm" }}>
+          Professional Background<br/>
+          </h1>
+
           <p className="text-sm mb-4">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et <br/>
-            massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit <br/>
-            Ut et massa mi Lorem ipsum dolor sit amet consectetur <br/>
-            adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet <br />
-            consectetur adipiscing elit Ut et massa mi..<br/>
+          With a solid educational foundation in Business Intelligence and<br/>
+          Information Technology, combined with hands-on experience in supply<br/>
+          chain management, I bring a unique blend of skills to the table.<br/>
+          My proactive approach, coupled with critical thinking and a<br/>
+          team-oriented mindset, enables me to drive impactful results in<br/>
+          any project I undertake.
           </p>
+
+          <h1 className="font-bold mb-4" style={{ marginTop: "1cm" }}>
+          Hobbies<br/>
+          </h1>
+
           <p className="text-sm mb-4">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et <br/>
-            massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit <br/>
-            Ut et massa mi Lorem ipsum dolor sit amet consectetur <br/>
-            adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet <br />
-            consectetur adipiscing elit Ut et massa mi..<br/>
+            When I'm not immersed in the world of data and business, you<br/>
+            can find me gliding across dance floors, cruising on my longboard,<br/>
+            or soaking up the beauty of nature on a camping trip. I believe in<br/>
+            living life to the fullest and embracing every opportunity for<br/>
+            adventure and growth.
           </p>
-          <p className="text-sm mb-4">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et <br/>
-            massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit <br/>
-            Ut et massa mi Lorem ipsum dolor sit amet consectetur <br/>
-            adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet <br />
-            consectetur adipiscing elit Ut et massa mi..<br/>
-          </p>
+
         </div>
 
         {/* Lado direito */}
         <div style={{ marginLeft: "2cm", marginTop: "1cm"}}>
           {/* PHOTO */}
           <div className="flex">
-            <Image src="/woman.png" width={400} height={400} alt="User Photo" style={{ filter: darkMode ? '' : 'none' }}/>
+            <Image src="/pic2.JPG" width={400} height={400} alt="User Photo" style={{ filter: darkMode ? '' : 'none' }}/>
           </div>
 
           {/* Logos */}
          <div className="flex">
 
             <div style={{ marginLeft: "0cm", marginTop: "0cm"}}><br />
-            <a href="https://linkdin.com" className="flex items-center">
-              <Image src="/in.png" alt="LinkedIn" width={32} height={32} className="mr-4" />
+            <a href="https://www.linkedin.com/in/luiz-machado-jr" className="flex items-center">
+              <Image src="/in (2).png" alt="LinkedIn" width={32} height={32} className="mr-4" />
               Follow me on LinkedIn
               </a><br />
 
-              <a href="https://twiter.com" className="flex items-center">
-              <Image src="/x.png" alt="Twitter" width={32} height={32} className="mr-4" />
-              Follow me on X
+              <a href="https://www.instagram.com/luiz_juniorx/" className="flex items-center">
+              <Image src="/insta.png" alt="Twitter" width={32} height={32} className="mr-4" />
+              Follow me on Instagram
               </a><br />
 
               <a href="https://github.com/segurapiao" className="flex items-center">
@@ -98,9 +103,9 @@ export default function HomePage() {
                 Follow me on GitHub
               </a><br/>
 
-              <a href="mailto:jane@email.com" className="flex items-center text-blue-500">
+              <a href="mailto:jrufrj@yahoo.com.br" className="flex items-center text-blue-500">
                   <Image src="/mail.png" alt="e-mail" width={32} height={32} className="mr-4" />
-                  jane@email.com
+                  jrufrj@yahoo.com.br
               </a>
 
             </div>

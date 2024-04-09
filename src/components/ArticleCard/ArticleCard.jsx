@@ -6,12 +6,17 @@ const ArticleCard = ({ date, title, content, link, darkMode }) => {
   return (
     <article data-testid={'articleCard'} className={`article-card ${darkMode ? 'dark' : 'light'}`}>
       <div className="article-card-header">
+
         <time data-testid={'articleCardDate'} className="article-card-date">
           {date}
         </time>
-        <h2 data-testid={'articleCardTitle'} className="article-card-title">
+        </div>
+
+        <div className="article-card-header">
+        <h2 data-testid={'articleCardTitle'} className="article-card-title" style={{ marginLeft: "0cm", marginTop: "0cm"}}>
           {title}
         </h2>
+
       </div>
       <p data-testid={'articleCardContent'} className="article-card-content">
         {content}

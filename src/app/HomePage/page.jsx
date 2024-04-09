@@ -46,30 +46,28 @@ export default function HomePage() {
       <div style={{ justifyContent: "center", marginLeft: "4cm", marginTop: "2cm" }}>
 
         {/* PHOTO */}
-        <div className="w-10 h-10 bg-black rounded-full mb-4">
-        <Image src="/photo.jpg" width={40} height={40} className="rounded-full" alt="User Photo" style={{ filter: darkMode ? '' : 'none' }}/>
-        </div>
-
+        <div className="flex rounded-full ">
+        <Image src="/face12.jpg" width={50} height={40} className="rounded-full" alt="User Photo" style={{ filter: darkMode ? '' : 'none' }}/>
 
         {/* Título */}
-        <h1 className="font-bold text-4xl mb-4" style={{ marginTop: "1cm" }}>Software engineer, father, and believer</h1>
-
+        <h1 className="font-bold text-4xl mb-4" style={{ marginLeft: "0.5cm", marginTop: "0.5cm" }} >Welcome to Luiz Machado's Digital Hub</h1>
+        </div><br/>
         {/* Texto */}
         <p className="text-sm mb-4">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor <br />
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor <br />
-          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor <br />
-        </p>
+        Welcome to my Digital Hub! I'm Luiz Machado, a dedicated professional with a background in<br />
+        business intelligence and a passion for leveraging data to drive impactful decisions.<br />
+        Explore my projects and learn more about me below. <br />
+       </p>
 
         {/* Logos */}
 
           <div className="flex">
-            <a href="https://linkdin.com">
-              <Image src="/in.png" alt="LinkedIn" width={25} height={25} className="mr-2" />
+            <a href="https://www.linkedin.com/in/luiz-machado-jr">
+              <Image src="/in (2).png" alt="LinkedIn" width={25} height={25} className="mr-2" />
             </a>
 
-            <a href="https://twiter.com">
-              <Image src="/x.png" alt="Twitter" width={25} height={25} className="mr-2" />
+            <a href="https://www.instagram.com/luiz_juniorx/">
+              <Image src="/insta.png" alt="Twitter" width={25} height={25} className="mr-2" />
             </a>
 
             <a href="https://github.com/segurapiao" >
@@ -82,12 +80,14 @@ export default function HomePage() {
 
       {/* Divisão da tela em duas metades */}
       <div className="flex" style={{justifyContent: "center"}}>
+
         <div style={{ marginLeft: "0cm", marginTop: "1cm" }}>
+
           {/* Article 1 */}
           <ArticleCard
-            date="December 25, 2023"
-            title="Lorem ipsum dolor sit ametzzzlalaia"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue..."
+            date="2022-2024"
+            title="Nurturing Data Intelligence at Ensign College"
+            content="Developed a diverse skill set in data analysis and business intelligence techniques during my tenure at Ensign College, focusing on leveraging technology and strategic insights to drive organizational success."
             link="/article1"
             darkMode={darkMode}
           />
@@ -97,9 +97,9 @@ export default function HomePage() {
 
           {/* Article 2 */}
           <ArticleSnippet
-            date="December 25, 2023"
-            title="Lorem ipsum dolor sit ametzzzlalaia"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue..."
+            date="2009-2019"
+            title="Supply Chain Efficiency Enhancement"
+            content="Implemented process improvements to enhance supply chain efficiency, resulting in significant cost savings."
             link="/article2"
           />
 
@@ -108,9 +108,9 @@ export default function HomePage() {
 
           {/* Article 3 */}
           <ArticleSnippet
-            date="December 25, 2023"
-            title="Lorem ipsum dolor sit ametzzzlalaia"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue..."
+            date="2009-2019"
+            title="Inventory Optimization Project"
+            content="Led an initiative to optimize inventory management systems, resulting in a 20% reduction in excess inventory."
             link="/article3"
           />
         </div>
@@ -127,22 +127,50 @@ export default function HomePage() {
 
           <div className="rounded-lg p-4 mb-1">
             <WorkWidget
-              title="Work"
-              content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna."
+              title="Explore my professional journey"
+              content="Delve into my diverse expertise and hands-on experience across industries."
               experiences={[
                 {
-                  logo: "/microsoft.png",
-                  organization: "Microsoft",
-                  jobTitle: "Job Title 1",
-                  startYear: 2018,
-                  endYear: 2020,
+                  logo: "/ensign.png",
+                  organization: "Ensign College",
+                  jobTitle: "Student",
+                  startYear: 2022,
+                  endYear: 2024,
                 },
                 {
-                  logo: "/slack.png",
-                  organization: "Apple",
-                  jobTitle: "Job Title 2",
+                  logo: "/UVU.png",
+                  organization: "UVU",
+                  jobTitle: "Student",
                   startYear: 2020,
-                  endYear: null,
+                  endYear: 2021,
+                },
+                {
+                  logo: "/train.png",
+                  organization: "Railway Company",
+                  jobTitle: "Supply Chain Specialist",
+                  startYear: 2009,
+                  endYear: 2019,
+                },
+                {
+                  logo: "/degree2.png",
+                  organization: "Postgraduate degree",
+                  jobTitle: "Business Management",
+                  startYear: 2012,
+                  endYear: 2013,
+                },
+                {
+                  logo: "/degree3.png",
+                  organization: "Bachelor's Degree in IT",
+                  jobTitle: "Student",
+                  startYear: 2009,
+                  endYear: 2012,
+                },
+                {
+                  logo: "/lds.png",
+                  organization: "Volunteer Experience",
+                  jobTitle: "Missionary",
+                  startYear: 2006,
+                  endYear: 2008,
                 },
               ]}
             />
