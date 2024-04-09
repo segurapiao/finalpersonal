@@ -1,0 +1,79 @@
+/* SignupWidget.css */
+.signup-widget {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  row-gap: 12px;
+}
+
+.signup-widget h2 {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.signup-widget p {
+  font-size: 16px;
+  color: #777;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+}
+
+.input-row input {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.input-row button {
+  padding: 2px 24px;
+  width: 80px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  line-height: 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.input-row button:hover {
+  background-color: #45a049;
+}
+
+.input-row button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+/* Dark Mode */
+.dark .signup-widget {
+  background-color: #333;
+}
+
+.dark .signup-widget h2 {
+  color: #fff;
+}
+
+.dark .signup-widget p {
+  color: #fff;
+}
+
+.dark .signup-widget. .input-row input {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark .signup-widget .input-row button {
+  background-color: #4caf50; /* Mantendo a cor de botão verde para o modo escuro */
+}

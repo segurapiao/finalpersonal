@@ -1,0 +1,32 @@
+/* Estilos para o modo claro */
+.light {
+  background-color: #ffffff; /* Fundo branco */
+  color: #000000; /* Texto preto */
+
+}
+
+
+
+/* Estilos para o modo escuro */
+.dark {
+  background-color: #333; /* Fundo preto */
+  color: #ffffff; /* Texto branco */
+}
+
+.dark .btn {
+  background-color: #000000; /* Cor do botão no modo escuro */
+  color: rgb(5, 6, 23); /* Cor do texto no botão no modo escuro */
+}
+
+
+.dark-bg-black {
+  background-color: #000000; /* Cor de fundo preta para o modo escuro */
+}
+
+.dark img {
+    filter: invert(100%);
+}
+
+.nodark {
+  filter: none; /* Remove o filtro de inversão de cores */
+}
