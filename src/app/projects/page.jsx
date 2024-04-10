@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import ThemeSwitcher from "@/components/ThemeSwitcher/ThemeSwitcher";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 
+
 export default function Projects() {
   const [darkMode, setDarkMode] = useState(false); // Estado do modo escuro
 
@@ -13,7 +14,7 @@ export default function Projects() {
   // Opções de menu
   const menuOptions = [
     { path: "/HomePage", label: "Home" },
-    { path: "/about2", label: "About" },
+    { path: "/about", label: "About" },
     { path: "/projects", label: "Projects" },
     { path: "/uses", label: "Uses" },
   ];
@@ -34,7 +35,7 @@ export default function Projects() {
       </div>
 
       {/* Conteúdo principal */}
-      <div style={{ marginLeft: "4.5cm", marginTop: "2cm", marginBottom: "2cm" }}>
+      <div style={{ marginLeft: "2.5cm", marginTop: "2cm", marginBottom: "2cm" }}>
         {/* Título */}
         <h1 className="font-bold text-3xl mb-4">
           Here are some of my accomplishments thus far, <br />
@@ -56,12 +57,12 @@ export default function Projects() {
         <div style={{ marginLeft: "0cm" }}>
           {/* Project 1 */}
           <ProjectCard
-            name={"Ensign College"}
-            logo={"/ensign.png"}
+            name={"Business Intelligence Implementation"}
+            logo={"/p2.png"}
             content={
-              "Working with the Product Team to discover strong solutions for a digital product to support hourly-based external recruiting services. Our platform is built on top of firebase technologies, including Firestore, Cloud Functions (NodeJS + Typescript), Sveltekit, and Typesense."
+              "Utilized data science techniques to analyze business data and drive strategic decisions. Implemented business intelligence solutions to enhance data-driven decision-making processes."
             }
-            link={"https://www.ensign.edu/"}
+            link="/p1"
             darkMode={darkMode} // Passa o estado de darkMode para ProjectCard
           />
 
@@ -83,13 +84,14 @@ export default function Projects() {
         <div style={{ marginLeft: "0.5cm" }}>
           {/* Project 3 */}
           <ProjectCard
-            name={"Ensign College"}
-            logo={"/ensign.png"}
+            name={"Supply Chain Optimization"}
+            logo={"/sc.png"}
             content={
-              "Working with the Product Team to discover strong solutions for a digital product to support hourly-based external recruiting services. Our platform is built on top of firebase technologies, including Firestore, Cloud Functions (NodeJS + Typescript), Sveltekit, and Typesense."
+              "Led initiatives to optimize supply chain processes and enhance efficiency. Implemented ERP systems for inventory management and logistics, resulting in cost savings and improved inventory control."
             }
-            link={"https://www.ensign.edu/"}
+            link="/p2"
           />
+
 
           {/* Espaço entre os Projetos */}
           <div style={{ marginBottom: "0.5cm" }}></div>
@@ -109,12 +111,12 @@ export default function Projects() {
         <div style={{ marginBottom: "2cm", marginLeft: "0.5cm" }}>
           {/* Project 5 */}
           <ProjectCard
-            name={"Ensign College"}
-            logo={"/ensign.png"}
+            name={"Volunteer Missionary Work"}
+            logo={"/lds.png"}
             content={
-              "Working with the Product Team to discover strong solutions for a digital product to support hourly-based external recruiting services. Our platform is built on top of firebase technologies, including Firestore, Cloud Functions (NodeJS + Typescript), Sveltekit, and Typesense."
+              "Served as a missionary, engaging with diverse communities and providing support through motivational training and strategic life planning."
             }
-            link={"https://www.ensign.edu/"}
+            link="/p3"
           />
 
           {/* Espaço entre os Projetos */}
@@ -159,7 +161,7 @@ export default function Projects() {
         className="text-right  text-xs absolute bottom-0 right-0"
         style={{ marginRight: "1.5cm", marginBottom: "-1.0cm" }}
       >
-        © 2024 John Doe. All rights reserved.
+        © 2024 Luiz Machado. All rights reserved.
       </p>
     </div>
   );

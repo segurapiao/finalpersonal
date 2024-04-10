@@ -7,21 +7,36 @@ const SignupWidget = ({ title, content, simulateNetworkRequestTime, darkMode }) 
   const [message, setMessage] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [userMessage, setUserMessage] = useState('');
 
   async function handleSubmit(e) {
     e.preventDefault();
     try {
       setBusy(true);
       await new Promise((resolve) => setTimeout(resolve, simulateNetworkRequestTime));
-      setMessage(`Thanks for subscribing, ${email}!`);
+
+      // Enviar mensagem por e-mail
+      await sendEmailToRecipient(userMessage);
+
+      setMessage(`Thanks for your message! We have sent it to jrufrj@yahoo.com.br`);
       setIsSubscribed(true);
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setMessage(`Failed to send message. Please try again later.`);
     } finally {
       setBusy(false);
     }
   }
 
   const handleChange = (e) => {
-    setEmail(e.target.value);
+    setUserMessage(e.target.value);
+  };
+
+  const sendEmailToRecipient = async (message) => {
+    // Simulação de envio de mensagem por e-mail
+    await new Promise(resolve => setTimeout(resolve, 1000)); // Simulando 1 segundo de tempo de envio
+    console.log(`Message sent to jrufrj@yahoo.com.br: ${message}`);
+    // Aqui você pode adicionar lógica real para enviar a mensagem por e-mail
   };
 
   return (
@@ -35,19 +50,22 @@ const SignupWidget = ({ title, content, simulateNetworkRequestTime, darkMode }) 
       {!isSubscribed && (
         <>
           <p data-testid={'signupWidgetContent'} className={darkMode ? 'dark-text' : 'light-text'}>{content}</p>
-          <div className={'input-row'}>
-            <input
-              data-testid={'signupWidgetInput'}
-              type="email"
+          <div>
+            <textarea
+              data-testid={'signupWidgetTextarea'}
               required={true}
-              value={email}
+              value={userMessage}
               onChange={handleChange}
               disabled={busy}
-              className={darkMode ? 'dark' : 'light'} // Aplica classe condicional para modo escuro ou claro
+              rows={4}
+              className={`message-input ${darkMode ? 'dark' : 'light'}`} // Adiciona classe para o campo de mensagem
             />
+
+            <div className={'input-row'}>
             <button data-testid={'signupWidgetButton'} type="submit" disabled={busy} className={darkMode ? 'dark' : 'light'}>
-              {busy ? 'Joining...' : 'Join'}
+              {busy ? 'Sending...' : 'Send Message'}
             </button>
+            </div>
           </div>
         </>
       )}

@@ -13,7 +13,7 @@ export default function HomePage() {
   // Opções de menu
   const menuOptions = [
     { path: "/HomePage", label: "Home" },
-    { path: "/about2", label: "About" },
+    { path: "/about", label: "About" },
     { path: "/projects", label: "Projects" },
     { path: "/uses", label: "Uses" },
   ];
@@ -141,7 +141,7 @@ export default function HomePage() {
         className="text-right text-xs absolute bottom-0 right-0"
         style={{ marginRight: "1.5cm", marginBottom: "-1.0cm" }}
       >
-        © 2024 John Doe. All rights reserved.
+        © 2024 Luiz Machado. All rights reserved.
       </p>
     </div>
   );

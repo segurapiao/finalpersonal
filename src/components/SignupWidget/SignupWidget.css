@@ -11,6 +11,13 @@
   row-gap: 12px;
 }
 
+.message-input {
+  border: 1px solid #ccc; /* Adiciona uma borda cinza */
+  padding: 5px; /* Adiciona um espaçamento interno */
+  width: 100%; /* Define a largura para preencher todo o espaço disponível */
+  resize: vertical; /* Permite a redimensionamento vertical */
+}
+
 .signup-widget h2 {
   margin: 0px;
   font-size: 24px;
@@ -37,8 +44,8 @@
 }
 
 .input-row button {
-  padding: 2px 24px;
-  width: 80px;
+  padding: 6px 24px;
+  width: 400px;
   text-align: center;
   border-radius: 6px;
   background-color: #4caf50;

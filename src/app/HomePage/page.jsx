@@ -24,9 +24,9 @@ export default function HomePage() {
   ];
 
   const skills = [
-    { name: "HTML", proficiency: 60, icon: "html5.png" },
-    { name: "CSS", proficiency: 50, icon: "css3.png" },
-    { name: "JavaScript", proficiency: 75, icon: "javascript.png" },
+    { name: "Tableau", proficiency: 80, icon: "tableau.png" },
+    { name: "Data Analysis", proficiency: 90, icon: "dados.png" },
+    { name: "JavaScript", proficiency: 40, icon: "javascript.png" },
   ];
 
   return (
@@ -88,7 +88,7 @@ export default function HomePage() {
             date="2022-2024"
             title="Nurturing Data Intelligence at Ensign College"
             content="Developed a diverse skill set in data analysis and business intelligence techniques during my tenure at Ensign College, focusing on leveraging technology and strategic insights to drive organizational success."
-            link="/article1"
+            link="/card1"
             darkMode={darkMode}
           />
 
@@ -100,7 +100,7 @@ export default function HomePage() {
             date="2009-2019"
             title="Supply Chain Efficiency Enhancement"
             content="Implemented process improvements to enhance supply chain efficiency, resulting in significant cost savings."
-            link="/article2"
+            link="/card2"
           />
 
           {/* Espaço entre os artigos */}
@@ -111,7 +111,7 @@ export default function HomePage() {
             date="2009-2019"
             title="Inventory Optimization Project"
             content="Led an initiative to optimize inventory management systems, resulting in a 20% reduction in excess inventory."
-            link="/article3"
+            link="/card3"
           />
         </div>
 
@@ -119,8 +119,8 @@ export default function HomePage() {
         <div style={{ marginLeft: "3cm", marginTop: "0.5cm", marginRight: "3cm" }}>
           <div className="rounded-lg p-4 mb-1">
             <SignupWidget
-              title={"Stay up to date"}
-              content={"Get notified when I publish something new, and unsubscribe at any time."}
+              title={"Send me a Message"}
+              content={"Reach out to me with any questions or feedback."}
               darkMode={darkMode}
             />
           </div>
@@ -178,7 +178,7 @@ export default function HomePage() {
           <div className="rounded-lg p-4 mb-4">
             <SkillsWidget
               title={"Skills"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."}
+              content={"Some of the tools I have experience with."}
               skills={skills}
             />
           </div>
@@ -212,7 +212,7 @@ export default function HomePage() {
         className="text-right text-xs absolute bottom-0 right-0"
         style={{ marginRight: "1.5cm", marginBottom: "-1.0cm" }}
       >
-        © 2024 John Doe. All rights reserved.
+        © 2024 Luiz Machado. All rights reserved.
       </p>
     </div>
   );
