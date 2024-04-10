@@ -36,6 +36,7 @@ export default function Uses() {
           description:
             'The Dell XPS 15 is a popular choice among professionals who require performance and portability. With its high-resolution display, powerful processor, and sleek design, it is ideal for intensive data analysis and professional presentations.',
         },
+      
       ],
     },
     {

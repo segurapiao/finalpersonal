@@ -18,3 +18,16 @@
   color: #555555;
 }
 
+// .dark mode
+
+.dark .uses-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dark .uses-card p {
+  margin: 0;
+  color: #fff;
+}
+
