@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './WorkWidget.css';
+import Image from 'next/image';
 
 const WorkWidget = ({ title, content, experiences, darkMode }) => {
   return (
@@ -11,7 +12,7 @@ const WorkWidget = ({ title, content, experiences, darkMode }) => {
         {experiences.map((experience, index) => (
           <li key={index} data-testid={`workWidgetItem${index}`} className={darkMode ? 'dark' : ''}>
             <div className="work-item">
-              <img
+              <Image
                 src={experience.logo}
                 alt={`${experience.organization} Logo`}
                 data-testid={`workWidgetItemLogo${index}`}

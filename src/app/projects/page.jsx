@@ -45,7 +45,7 @@ export default function Projects() {
 
         {/* Texto */}
         <p className="text-sm mb-4">
-        Discover the projects I've been involved in throughout my professional journey.<br />
+        Discover the projects I have been involved in throughout my professional journey.<br />
         From optimizing supply chain processes to driving business decisions through data analysis,<br />
          each project reflects my dedication to delivering high-quality results and driving meaningful impact.<br />
         </p>

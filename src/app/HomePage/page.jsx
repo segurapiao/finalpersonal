@@ -50,11 +50,11 @@ export default function HomePage() {
         <Image src="/face12.jpg" width={50} height={40} className="rounded-full" alt="User Photo" style={{ filter: darkMode ? '' : 'none' }}/>
 
         {/* Título */}
-        <h1 className="font-bold text-4xl mb-4" style={{ marginLeft: "0.5cm", marginTop: "0.5cm" }} >Welcome to Luiz Machado's Digital Hub</h1>
+        <h1 className="font-bold text-4xl mb-4" style={{ marginLeft: "0.5cm", marginTop: "0.5cm" }} >Welcome to Luiz Machados Digital Hub</h1>
         </div><br/>
         {/* Texto */}
         <p className="text-sm mb-4">
-        Welcome to my Digital Hub! I'm Luiz Machado, a dedicated professional with a background in<br />
+        Welcome to my Digital Hub! I am Luiz Machado, a dedicated professional with a background in<br />
         business intelligence and a passion for leveraging data to drive impactful decisions.<br />
         Explore my projects and learn more about me below. <br />
        </p>

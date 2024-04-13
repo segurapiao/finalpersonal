@@ -33,7 +33,7 @@ const ThemeSwitcher = ({ darkClassName = 'dark', lightClassName = 'light' }) => 
 
   useEffect(() => {
     applyTheme();
-  }, [isDarkMode]);
+  }, [isDarkMode, applyTheme]);
 
   return (
     <div>

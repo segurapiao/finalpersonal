@@ -1,6 +1,7 @@
 import React from "react";
 import "./SkillsWidget.css";
 import PropTypes from "prop-types";
+import Image from "next/image";
 
 const SkillsWidget = ({ title, content, skills, darkMode }) => {
   return (
@@ -11,7 +12,7 @@ const SkillsWidget = ({ title, content, skills, darkMode }) => {
         {skills.map((skill, index) => (
           <li key={index} data-testid={`skillsWidgetItem${index}`}>
             <div className="skills-item">
-              <img data-testid={`skillsWidgetItemLogo${index}`} src={skill.icon} alt={`${skill.name} Icon`} style={{ filter: darkMode ? '' : 'none' }}/>
+              <Image data-testid={`skillsWidgetItemLogo${index}`} src={skill.icon} alt={`${skill.name} Icon`} style={{ filter: darkMode ? '' : 'none' }}/>
               <div className="skills-item-content">
                 <h3 data-testid={`skillsWidgetItemName${index}`}>{skill.name}</h3>
                 <div className="skills-item-proficiency">

@@ -3,12 +3,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ProjectCard.css';
+import Image from 'next/image';
 
 const ProjectCard = ({ logo, name, content, link, darkMode }) => {
   return (
     <div data-testid="projectCard" className={`project-card ${darkMode ? 'dark' : 'light'}`}>
       <div>
-        <img
+        <Image
           data-testid="projectCardLogo"
           src={logo}
           alt={`${name} Logo`}
@@ -31,7 +32,7 @@ const ProjectCard = ({ logo, name, content, link, darkMode }) => {
           rel="noreferrer"
           className={`project-card-link ${darkMode ? 'dark' : 'light'}`}
         >
-          <img src="/link.svg" alt="" className={`project-card-link-img ${darkMode ? 'dark' : 'light'}`} /> View Project
+          <Image src="/link.svg" alt="" className={`project-card-link-img ${darkMode ? 'dark' : 'light'}`} /> View Project
         </a>
       </div>
     </div>

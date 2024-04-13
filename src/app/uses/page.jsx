@@ -113,8 +113,8 @@ export default function Uses() {
         <p className="text-sm mb-4">
           Welcome to my curated list of software, gadgets, and tools that I use and highly recommend. In this digital age, having the right tools<br />
           can significantly enhance productivity and streamline workflows. From essential software for development to must-have gadgets for your<br />
-          workstation, I've compiled a comprehensive list to help you stay organized, efficient, and productive. Whether you're a developer, designer,<br />
-          or productivity enthusiast, you're sure to find something valuable in my collection. Explore the carefully selected tools and elevate your<br />
+          workstation, I have compiled a comprehensive list to help you stay organized, efficient, and productive. Whether you are a developer, designer,<br />
+          or productivity enthusiast, you are sure to find something valuable in my collection. Explore the carefully selected tools and elevate your<br />
           digital experience today.<br />
         </p>
       </div>

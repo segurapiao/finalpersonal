@@ -43,8 +43,8 @@ export default function HomePage() {
           </h1>
 
           <p className="text-sm mb-4">
-          Hello! I'm Luiz Machado, a multifaceted professional with a love for data,<br/>
-          adventure, and community. Beyond my professional endeavors, I'm passionate<br/>
+          Hello! I am Luiz Machado, a multifaceted professional with a love for data,<br/>
+          adventure, and community. Beyond my professional endeavors, I am passionate<br/>
           about Brazilian ballroom dancing, longboarding, soaking up the sun at the<br/>
           beach, and exploring nature through hikes and camping trips.<br/>
           </p>
@@ -68,7 +68,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-sm mb-4">
-            When I'm not immersed in the world of data and business, you<br/>
+            When I am not immersed in the world of data and business, you<br/>
             can find me gliding across dance floors, cruising on my longboard,<br/>
             or soaking up the beauty of nature on a camping trip. I believe in<br/>
             living life to the fullest and embracing every opportunity for<br/>
