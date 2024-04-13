@@ -34,9 +34,9 @@ export default function Uses() {
         {
           title: 'Dell XPS 15',
           description:
-            'The Dell XPS 15 is a popular choice among professionals who require performance and portability. With its high-resolution display, powerful processor, and sleek design, it is ideal for intensive data analysis and professional presentations.',
+            'The Dell XPS 151 is a popular choice among professionals who require performance and portability. With its high-resolution display, powerful processor, and sleek design, it is ideal for intensive data analysis and professional presentations.',
         },
-      
+
       ],
     },
     {
